@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Card from "../components/Card";
 import { useParams } from "react-router-dom";
-const api_key=import.meta.env.VITE_api_key;
-const base_url=import.meta.env.VITE_base_url;
+const api_key=process.env.REACT_APP_api_key;
+const base_url=process.env.REACT_APP_base_url;
 const SearchPage = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
